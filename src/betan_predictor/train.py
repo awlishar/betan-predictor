@@ -88,7 +88,7 @@ def preprocess_dataset(X, y):
 
     X_train = scaler.fit_transform(X_train)
     X_test = scaler.transform(X_test)
-    return X_train, X_test, y_train, y_test
+    return X_train, X_test, y_train, y_test, scaler
 
 
 def train_model(X_train, y_train, epochs=5000):
